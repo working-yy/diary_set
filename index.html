@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>어른이를 위한 그림일기 세트</title>
+	<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<style type="text/css">
+
+
+		html{font-family: 'Gaegu', cursive; scroll-behavior: smooth;}
+		body, img, p {margin: 0;}
+		body {overflow-x: hidden;overflow-y: auto;}
+		img{display: block; margin-left: auto; margin-right: auto;  margin-bottom: 100px;}
+		header, section, footer{width: 700px; margin: auto;}
+		header p{text-align: center; font-size: 20pt; padding:20px;  }
+		section{margin-bottom: 90px}
+		section p{text-align:center; margin-bottom: 20px; font-weight: 400; line-height:1.5; letter-spacing:1.5;font-size: 15pt}
+		footer{height: 200px;  font-weight: 400 }
+
+		/* ul{text-align: center; margin-bottom: 130px; margin-top: 30px width: 100%;} */
+		/* li {font-size: 1em; background:#8ccbe5; display: inline-block; width:150px; height: 40px; text-align:center; margin-bottom: -50px; line-height: 40px;  } */
+		a{color:black; text-decoration: none;}
+		#cloud{text-align:center;}
+		.footer{text-align:right;}
+		.onefive {margin-bottom: 100px;}
+		.one {font-weight: 400; font-size: 20pt}
+		.love {text-align: right; margin-right: 100px; font-size:18pt;}
+		.possible{text-align:left;margin-left: 100px; font-size:18pt;}
+		.a {width: 1000px; margin-bottom:150px;position:relative; z-index: 21}
+		.cover {position: relative; height: 600px;}
+		.cover img {position: absolute; z-index: 3;left:200px;} 
+		.grid1 {position: relative; height: 600px;}
+		.grid1 img {position: absolute; z-index: 1; left: 850px; top: 220px;  }
+		.grid2 {position: relative; height: 600px;}
+		.grid2 img {position: absolute;z-index: 2; left: 450px; bottom: 250px;}
+		.all {position: relative; height: 1000px;}
+		.all img {position: absolute;z-index: 4;}
+		.diary{position: relative; height: 500px;}
+		.diary img {position: absolute;z-index: 5; left:400px; bottom:400px;}
+		.b {width: 1000px; margin-bottom:150px; position:relative; z-index: 21}
+		.color1 {position: relative; height: 300px;}
+		.color1 img {position: absolute; z-index: 7; left:400px;}
+		.color2 {position: relative; height: 300px;}
+		.color2 img {position: absolute; z-index: 8; left:890px; bottom:100px;}
+		.rainbow {position: relative; height: 600px;}
+		.rainbow img{position: absolute; z-index: 6; left:850px; bottom:400px;}
+		.c{width: 1000px; margin-bottom:150px; position:relative; z-index: 21}
+		.pen1{position: relative; height: 600px;}
+		.pen1 img{position: absolute; z-index: 9;left:500px;}
+		.pen2{position: relative; height: 600px;}
+		.pen2 img{position: absolute; z-index: 10; bottom: 450px; left:550px; }
+		.d{width: 1000px; margin-bottom:150px; position:relative; z-index: 21}
+		.sticker1 {position: relative; height: 600px;}
+		.sticker1 img{position: absolute; z-index: 11; left:500px;}
+		.sticker2 {position: relative; height: 600px;}
+		.sticker2 img{position: absolute; z-index: 12; left:400px;top: 550px  }
+		.sticker3 {position: relative; height: 600px;}
+		.sticker3 img{position: absolute; z-index: 13; left:870px; top:250px; }
+		.e {width: 1000px; margin-bottom:150px;position:relative; z-index: 21}
+		.bag1{position: relative; height: 800px;}
+		.bag1 img {position: absolute; z-index: 14;left:500px;}
+		.bag2 {position: relative; height: 700px;}
+		.bag2 img {position: absolute; z-index: 15;left:100px; bottom:350px;}
+		.bag3 {position: relative; height: 500px;}
+		.bag3 img {position: absolute; z-index: 16;left:300px;}
+		.bag4 {position: relative; height: 500px; }
+		.bag4 img {position: absolute; z-index: 16;bottom:450px; left:800px;}
+		.bag5 {position: relative; height: 10px; }
+		.bag5 p {text-align:right; position: absolute; z-index: 17;bottom:510px; left:1100px;}
+		.f {width: 1000px; margin-bottom:150px;position:relative; z-index: 25}
+		.end1{position: relative; height: 500px; }
+		.end1 img {position: absolute; z-index: 18;left: 380px;}
+		.end2{position: relative; height: 500px; }
+		.end2 img {position: absolute; z-index: 19;left: 380px;top:100px;}
+		.end3{position: relative; height: 500px; }
+		.end3 img {position: absolute; z-index: 20;left: 685px;top:200px}
+		.end4{position: relative; height: 500px; }
+		.end4 img {position: absolute; z-index: 21;left: 380px; top:70px;}
+		.end5{position: relative; height: 1000px; }
+		.end5 img {position: absolute; z-index: 22;left:800px; top:350px;}
+		.g{width: 1000px; margin-bottom:0px;position:relative; z-index: 1}
+		.icon{position: relative; height: 10px; }
+		.icon img {position: absolute; z-index: 22; margin-bottom:-90px; bottom:170px; left:930px; }
+		
+
+
+*{margin:0; padding:0;}
+	ul li{list-style: none; display:}
+  nav {width:1000px;width: auto; display: block; position: sticky; top: 0; text-align: center; z-index:50;}
+	ul {width:980px;  margin: 0 auto;height:80px; text-align: center;padding: 0;}
+	li {font-size: 1em; background:#8ccbe5; display: inline-block; width:15%; height: 40px; text-align:center; margin-bottom: -50px; line-height: 40px; padding: 0;}
+	#test1 {width:100%; display:block;;height:auto;}
+	#test1 section {width:70%;}
+	</style>
+</head>
+<body>
+	<header><p id="top">상품정보</p></header>
+	<img src="line.png" width="100%" >
+	<img src="title.jpg" width="90%" >
+
+
+	<nav>
+	<ul>
+		<li><a href="#BRAND LOGO">BRAND LOGO</a></li>
+		<li><a href="#INTRODUCE ABOUT">INTRODUCE ABOUT</a></li>
+		<li><a href="#COMPONENTS">COMPONENTS</a></li>
+		<li><a href="#DETAILS">DETAILS</a></li>
+		<li><a href="#BASIC INFO.">BASIC INFO.</a></li>
+	</ul>
+</nav>
+
+<div id="test1">
+		<section>
+			<p id="BRAND LOGO">BRAND LOGO</p>
+			<img src="bubble.png" width="700px" >
+			<img src="bag.gif" width="500px" >
+		</section>
+<img src="line.png" width="60%" >
+		<section>
+			<p id="INTRODUCE ABOUT">INTRODUCE ABOUT</p>
+			<img src="whole1.jpg" width="80%" >
+			<img src="whole2.jpg" width="80%" >
+			<p> SIZE. Diary cover_17.8 * 23.3(cm)<br>
+				MATERIAL. PVC<br>
+				COLOR. Clear<br>
+				<br>
+				DESCRIPTION<br>
+				_ DON'T HEAT, DON'T EAT,<br>
+   				TRY EVERYTHING FOR YOUR MEMO<br>
+		</section>
+<img src="line.png" width="60%">
+		<section>
+			<p id="COMPONENTS">COMPONENTS</p>
+		</section>
+			<section>
+			<div class="onefive">
+				<p>
+				<br>
+				1. 6공 하드커버 + 속지<br>
+				2. 색연필<br>
+				3. 포스트잇+볼펜<br>
+				4. 스티커<br>
+				5. 가방<br>
+				</p>
+		</section>
+			
+		<section class="a">
+			<div class="one"><p>1. 6공 하드커버 + 속지</p></div>
+			<img src="cover1.jpg" width="80%" >
+			<p><div class="love">사랑하는 사람이나 자신에게 소중한 존재를<br>
+			다이어리 커버에 담아보기</div></p>
+			<p><div class="possible">2가지의 속지 타입으로 보다 다양한<br>
+			다꾸, 일기 쓰기 가능</div></p>	
+           	</section>
+           	<div class="cover"> <img src="cover2.jpg"width="50%"></div>
+           	<div class="grid1"> <img src="cover3.jpg"width="25%"></div>
+			<div class="grid2"> <img src="cover4.jpg"width="40%"></div>
+			<div class="all"> <img src="cover5.jpg" width="70%"></div>
+			<div class="diary"> <img src="cover6.jpg" width="60%"></div>
+
+		<section class="b">
+			<div class="one"><p>2.색연필</p></div>
+			<img src="colorpen1.jpg" width="80%" >
+			<p><div class="love">12가지 색으로 다양한 그림일기 그리기</div></p>
+			<p><div class="possible">소중한 그날의 기억을 그리드에 담기</div></p>
+			</section>
+
+			<div class="color1"> <img src="colorpen2.jpg"width="30%"></div>
+			<div class="rainbow"> <img src="rainbow.png"width="10%"></div>
+			<div class="color2"> <img src="colorpen3.jpg"width="30%"></div>
+
+		
+
+		<section class="c">
+			<div class="one"><p>3. 포스트잇+볼펜</p></div>
+			<img src="post1.jpg" width="80%">
+			<div class="love">to do list로 오늘 하루 체크하기</div>
+			<div class="possible">무언가를 빼먹진 않았는지,<br>
+								  살펴보는 데일리 포스트잇</div>
+			<div class="love">부드럽게 기록해주는<br>
+			                  LIFE&PIECES PEN</div>
+		</section>
+			<div class="pen1"><img src="post2.jpg" width="20%"></div>
+			<div class="pen2"><img src="post3.jpg" width="40%"></div>
+		
+
+		<section class="d">
+			<div class="one"><p>4. 스티커</p></div>
+			<img src="sticker1.jpg" width="80%" >
+			<div class="love">큐티뽀짝 귀여운 12종의 스티커를<br> 
+							  랜덤(2종)으로 만나보기</div>
+			<div class="possible">하나하나 마다<br>
+							      꽉꽉 차있는 구성으로<br>
+								  심심하지 않은 하루 만들기</div>
+		</section>
+			<div class="sticker1"><img src="sticker2.jpg" width="70%"></div>
+			<div class="sticker2"><img src="sticker3.jpg" width="30%"></div>
+			<div class="sticker3"><img src="puppy.png" width="10%"></div>
+			
+		<section class="e">
+			<div class="one"><p>5. 가방</p></div>
+			<img src="bag1.jpg" width="80%" >
+			<div class="love">자신을 사랑하는 코끼리를 닮아서<br>
+							  나를 돌아봐주기</div>
+			<div class="possible">모든 것이 들어가는<br> 
+								  작고 소중한 미니 크로스백</div>
+		</section>
+
+			<div class="bag1"><img src="bag2.jpg" width="50%"></div>	
+			<div class="bag2"><img src="bag3.jpg" width="50%"></div>
+			<div class="bag3"><img src="bag4.jpg" width="30%"></div>
+			<div class="bag4"><img src="bag5.jpg" width="30%"></div>
+			<div class="bag5"><p>*길이 조절이 가능해 보다<br> 편하게 사용가능</p></div> 
+<img src="line.png" width="60%" text-align="center">
+
+		<section class="f">
+			<p id="DETAILS">DETAILS</p>
+		</section>
+
+			<div class="end1"><img src="plus1.jpg" width="50%"></div>
+			<div class="end2"><img src="plus2.jpg" width="30%"></div>
+			<div class="end3"><img src="plus3.jpg" width="30%"></div>
+			<div class="end4"><img src="plus4.jpg" width="50%"></div>
+			<div class="end5"><img src="plus5.jpg" width="35%"></div>
+
+
+
+		<img src="bubble2.png" width="700px">
+<img src="line.png" width="60%" text-align="center">
+		<section>
+			<p id="BASIC INFO.">BASIC INFO.</p>
+			<img src="caution.png" width="50%" text-align="center"></section>
+ 
+
+ <footer>
+		<p id="cloud"><a href="#top">☁  T O P  ☁</a></p>
+		<div class="footer">copyright<br>2018210181<br>커뮤니케이션<br> 한서현</div>
+ </footer>
+		
+ <section class="g"></section>
+	<div class="icon"><img src="icon.png" width=8%></div>
+		
+</div>
+
+	
+</body>
+</html>
